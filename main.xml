@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="Documentation/Schemas/Amplitude.Unity.Runtime.RuntimeModule.xsd">
+
+	<!-- Conversion = add new files, not compatible with other mods. Standalone = replace all files, not compatible with other mods. Extension = add new files, compatible with other mods. // Example : <RuntimeModule Name="ExampleTechnology" Type="Extension" Version="1.1">-->
+  <RuntimeModule Name="CloningTech" Type="Extension" Version="1.0">
+
+    <!-- Title as it appears in the workshop // Example : <Title>Example technology</Title>-->
+        <Title>Cloning Technology</Title>
+    <!-- Description as it appears in the workshop // Example : <Description>Adds:- Technology - Exclusion technology link - Cost reduction technology link</Description>-->
+        <Description>
+Reverse engineer Horatio cloning technology and use it for your own means:
+
+Purify your empire by genetically altering aliens.
+
+Grow your population by cloning your own race.
+
+Build your armies by mass producing clone troopers.
+
+Clone food and grow your population 2x faster.
+
+Commercialize clonig and make your people happy.
+
+        </Description>
+    <!-- Name of the author // Example : <Author>I_AM_ENFER</Author>-->
+        <Author>ddorsey</Author>
+    <!-- Link to your other work // Example : <Homepage>https://www.games2gether.com/</Homepage>-->
+        <Homepage>https://www.games2gether.com</Homepage>
+    <!-- Image as it appears in the workshop. Size should be 430x430 pixels // Example : <PreviewImageFile>ModIcon.png</PreviewImageFile>-->
+        <PreviewImageFile>clonemod.png</PreviewImageFile>
+    <!-- Add more content to this each time you update the mod // Example : <ReleaseNotes>Added XSD validation for easier use.</ReleaseNotes>-->
+        <ReleaseNotes>Updated Text</ReleaseNotes>
+    <!-- Available tags: AI, Art, Buildings, Gameplay, Improvements, MajorFactions, Maps, MinorFactions, Multiplayer, Other, Resources, Technologies, Units // Example : <Tags>Gameplay</Tags>-->
+        <Tags>Buildings, Gameplay, Improvements, MajorFactions, Technologies</Tags>
+
+		<!-- XML files to load -->
+		<Plugins>
+      
+      <!--Technology-->
+      
+      <!-- Add one DatabasePlugin for each type you modify. Available DataTypes are referenced in DataTypes.txt -->
+      <DatabasePlugin DataType="ScienceConstructibleElement, Assembly-CSharp">
+        <!-- Some DataTypes include sub-types, they are added as following -->
+        <ExtraTypes>
+          <ExtraType DataType="TechnologyDefinition, Assembly-CSharp" />
+        </ExtraTypes>
+        <!-- Path leading to the files, starting from the location of this XML file. Note that you can use * to include several files at once (EntityActions[*].xml) -->
+        <FilePath>Simulation/TechnologyDefinitions.xml</FilePath>
+      </DatabasePlugin>
+
+      <DatabasePlugin DataType="TechnologyLinkDefinition, Assembly-CSharp">
+        <FilePath>Simulation/TechnologyLinkDefinitions.xml</FilePath>
+      </DatabasePlugin>
+
+      <DatabasePlugin DataType="Amplitude.Unity.Gui.GuiElement, Assembly-CSharp-firstpass">
+        <ExtraTypes>
+          <ExtraType DataType="Amplitude.Unity.Gui.ExtendedGuiElement, Assembly-CSharp-firstpass" />
+          <ExtraType DataType="TechnologyGuiElement2, Assembly-CSharp" />
+        </ExtraTypes>
+        <FilePath>Gui/GuiElements.xml</FilePath>
+      </DatabasePlugin>
+
+      <DatabasePlugin DataType="Amplitude.Unity.Simulation.SimulationDescriptor, Assembly-CSharp-firstpass">
+        <FilePath>Simulation/SimulationDescriptors.xml</FilePath>
+      </DatabasePlugin>
+      
+      <!--Clone Constructable-->
+      <DatabasePlugin DataType="IndustryConstructibleElement, Assembly-CSharp">
+        <ExtraTypes>
+          <ExtraType DataType="StarSystemImprovementDefinition, Assembly-CSharp" />
+          <ExtraType DataType="StarSystemPopulationTransformImprovementDefinition, Assembly-CSharp" />
+        </ExtraTypes>
+        <FilePath>Simulation/ConstructableDefinitions.xml</FilePath>
+      </DatabasePlugin>
+
+      <DatabasePlugin DataType="Amplitude.Unity.Simulation.SimulationDescriptor, Assembly-CSharp-firstpass">
+        <FilePath>Simulation/ConstructableSimulationDescriptors.xml</FilePath>
+      </DatabasePlugin>
+
+      <DatabasePlugin DataType="Amplitude.Unity.Gui.GuiElement, Assembly-CSharp-firstpass">
+        <ExtraTypes>
+          <ExtraType DataType="Amplitude.Unity.Gui.ExtendedGuiElement, Assembly-CSharp-firstpass" />
+        </ExtraTypes>
+        <FilePath>Gui/ConstructableGuiElements.xml</FilePath>
+      </DatabasePlugin>
+      
+      <!--Clone Laws-->
+      
+      <DatabasePlugin DataType ="Amplitude.Unity.Gui.GuiElement, Assembly-CSharp-firstpass">
+        <ExtraTypes>
+          <ExtraType DataType="LawGuiElement, Assembly-CSharp"/>
+        </ExtraTypes>
+        <FilePath>Gui/CloneLawGuiElements.xml</FilePath>
+      </DatabasePlugin>
+      
+      <DatabasePlugin DataType ="LawDefinition, Assembly-CSharp">
+        <FilePath>Simulation/CloneLawDefinitions.xml</FilePath>
+      </DatabasePlugin>
+
+      <DatabasePlugin DataType ="Amplitude.Unity.Simulation.SimulationDescriptor, Assembly-CSharp-firstpass">
+        <FilePath>Simulation/CloneLawSimulationDescriptors.xml</FilePath>
+      </DatabasePlugin>
+      
+      <!-- Add this if you replace text. Note that sub-folders must be named after the languages they contain -->
+      <LocalizationPlugin DefaultLanguage="english">
+				<Directory>Localization</Directory>
+			</LocalizationPlugin>
+      
+		</Plugins>
+
+	</RuntimeModule>
+</Datatable>

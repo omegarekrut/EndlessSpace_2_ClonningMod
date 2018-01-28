@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Documentation/Schemas/Amplitude.Unity.Runtime.RuntimeModule.xsd">
+  <ExtendedGuiElement Name="CloneMajorPopulation">
+    <Title>%AlternateTitle</Title>
+    <Description>%AlternateDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/StarSystem/StarSystemImprovementCloneMajorPopulationSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/StarSystem/StarSystemImprovementCloneMajorPopulationLarge" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%StarSystemImprovementCloneMajorPopulationTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="CreateMajorPopulation">
+    <Title>%CreateMajorPopulationTitle</Title>
+    <Description>%CreateMajorPopulationDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/StarSystem/StarSystemImprovementCloneMajorPopulationSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/StarSystem/StarSystemImprovementCloneMajorPopulationLarge" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%StarSystemImprovementCreateMajorPopulationEffectOverride</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <GuiElement Name="IndustryToManpower">
+    <Title>%IndustryToManpowerTitle</Title>
+    <Description>%IndustryToManpowerDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/StarSystem/StarSystemImprovementCloneMajorPopulationSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/StarSystem/StarSystemImprovementCloneMajorPopulationLarge" />
+    </Icons>
+  </GuiElement>
+  
+  <!--Horatio Gui-->
+
+  <ExtendedGuiElement Name="HoratioCreateMajorPopulation">
+    <Title>%CreateMajorPopulationTitle</Title>
+    <Description>%CreateMajorPopulationDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/StarSystem/StarSystemImprovementCloneMajorPopulationSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/StarSystem/StarSystemImprovementCloneMajorPopulationLarge" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%StarSystemImprovementCreateMajorPopulationEffectOverride</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <GuiElement Name="HoratioIndustryToManpower">
+    <Title>%IndustryToManpowerTitle</Title>
+    <Description>%IndustryToManpowerDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/StarSystem/StarSystemImprovementCloneMajorPopulationSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/StarSystem/StarSystemImprovementCloneMajorPopulationLarge" />
+    </Icons>
+  </GuiElement>
+  
+</Datatable>

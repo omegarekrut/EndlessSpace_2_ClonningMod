@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../../Documentation/Schemas/Amplitude.Unity.Localization.LocalizationDatatableElement.xsd">
+` <!--Technology-->
+  <LocalizationPair Name="%CloningTechTitle">Cloning</LocalizationPair>
+  <LocalizationPair Name="%CloningTechDescription">Reverse engineer Horatio cloning technology.</LocalizationPair>
+  
+  <!--Clone laws-->
+  <LocalizationPair Name="%CloneLaw1Title">Clone Labor Initiative</LocalizationPair>
+  <LocalizationPair Name="%CloneLaw1Description">This initiative allows clones to be conscripted as free labor. Though production increases, the economy declines from unemployment</LocalizationPair>
+  <LocalizationPair Name="%CloneLaw1ShortTitle">Clone Labor</LocalizationPair>
+
+  <LocalizationPair Name="%CloneLaw2Title">Genetically Engineered Food Act</LocalizationPair>
+  <LocalizationPair Name="%CloneLaw2Description">Allows the cloning of cattle and crops, doubling the growth of population. The law also includes subsidies to support the farmers producing the new food.</LocalizationPair>
+  <LocalizationPair Name="%CloneLaw2ShortTitle">Clone Food</LocalizationPair>
+
+  <LocalizationPair Name="%CloneLaw3Title">Commercialize Cloning Act</LocalizationPair>
+  <LocalizationPair Name="%CloneLaw3Description">Share cloning technology with businesses for commercial purposes such as resurrecting extinct creatures and cloning pets. Unfortunately, this new market draws scientist of almost every field, distracting them from creating new innovations.</LocalizationPair>
+  <LocalizationPair Name="%CloneLaw3ShortTitle">Clone Fun</LocalizationPair>
+  
+  <!--Clone Constructables-->
+  <LocalizationPair Name="%AlternateTitle">Genetic Alteration Lab</LocalizationPair>
+  <LocalizationPair Name="%AlternateDescription">Purify your Empire by genetically altering the alien population.</LocalizationPair>
+
+  <LocalizationPair Name="%CreateMajorPopulationTitle">Cloning Labs</LocalizationPair>
+  <LocalizationPair Name="%CreateMajorPopulationDescription">Using the best genes, create new citizens ready to serve their nation.</LocalizationPair>
+
+  <LocalizationPair Name="%IndustryToManpowerTitle">Generate Forces</LocalizationPair>
+  <LocalizationPair Name="%IndustryToManpowerDescription">Dedicate all industrial resources to produce clone troopers.</LocalizationPair>
+
+
+</Datatable>

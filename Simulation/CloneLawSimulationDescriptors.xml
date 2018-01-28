@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Documentation/Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+  <!--Clone labor-->
+  <SimulationDescriptor Name="CloneLaw1" Type="LawEffect">
+    <Modifier TargetProperty="SystemProduction"    Operation="Percent"   Value=".20"   Path="../ClassEmpire/ClassColonizedStarSystem"/>
+    <Modifier TargetProperty="SystemMoney"         Operation="Percent"   Value="-.20"   Path="../ClassEmpire/ClassColonizedStarSystem"/>
+  </SimulationDescriptor>
+
+  <!--Clone Food-->
+  <SimulationDescriptor Name="CloneLaw2" Type="LawEffect">
+    <Modifier TargetProperty="SystemGrowth"       Operation="Percent"   Value="1.0"   Path="../ClassEmpire/ClassColonizedStarSystem"/>
+    <Modifier TargetProperty="SystemMoney"        Operation="Percent"   Value="-.20"   Path="../ClassEmpire/ClassColonizedStarSystem"/>
+  </SimulationDescriptor>
+
+  <!--Commercial Cloning-->
+  <SimulationDescriptor Name="CloneLaw3" Type="LawEffect">
+    <Modifier TargetProperty="Happiness"            Operation="Addition"  Value="30"   Path="../ClassEmpire/ClassColonizedStarSystem"/>
+    <Modifier TargetProperty="PlanetRawScience"   	Operation="Addition"  Value="-2" 		Path="../ClassEmpire/ClassColonizedStarSystem/ClassColonizedPlanet" />
+  </SimulationDescriptor>
+  
+</Datatable>

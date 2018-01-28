@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Documentation/Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+
+  <LawGuiElement Name="CloneLaw1">
+    <Title>%CloneLaw1Title</Title>
+    <Description>%CloneLaw1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/clonelabor" />
+    </Icons>
+    <ShortTitle>%CloneLaw1ShortTitle</ShortTitle>
+  </LawGuiElement>
+
+  <LawGuiElement Name="CloneLaw2">
+    <Title>%CloneLaw2Title</Title>
+    <Description>%CloneLaw2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/clonefood" />
+    </Icons>
+    <ShortTitle>%CloneLaw2ShortTitle</ShortTitle>
+  </LawGuiElement>
+
+  <LawGuiElement Name="CloneLaw3">
+    <Title>%CloneLaw3Title</Title>
+    <Description>%CloneLaw3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/clonefun" />
+    </Icons>
+    <ShortTitle>%CloneLaw3ShortTitle</ShortTitle>
+  </LawGuiElement>
+
+  <LawGuiElement Name="HoratioCloneLaw2">
+    <Title>%CloneLaw2Title</Title>
+    <Description>%CloneLaw2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/clonefood" />
+    </Icons>
+    <ShortTitle>%CloneLaw2ShortTitle</ShortTitle>
+  </LawGuiElement>
+
+  <LawGuiElement Name="HoratioCloneLaw3">
+    <Title>%CloneLaw3Title</Title>
+    <Description>%CloneLaw3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/clonefun" />
+    </Icons>
+    <ShortTitle>%CloneLaw3ShortTitle</ShortTitle>
+  </LawGuiElement>
+  
+</Datatable>

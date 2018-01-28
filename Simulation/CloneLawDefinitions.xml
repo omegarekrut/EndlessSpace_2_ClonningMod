@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Documentation/Schemas/ScienceConstructibleElement.xsd">
+
+  
+
+  <LawDefinition Name="CloneLaw2" SubCategory="LawPolitics00" ScoreProvider="PacifistLawEnacted" Duration="1">
+    <Politics Name="Politics00"/>
+    <LawEffectSimulation>
+      <SimulationDescriptorReference Name="CloneLaw2" />
+    </LawEffectSimulation>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">GovernmentAnarchy</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">CloningTech</TechnologyPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Disable">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 1 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
+    <SimulationDescriptorReference Name="LawPolitics00"/>
+    <SimulationDescriptorReference Name="LawUpkeepLevel0"/>
+  </LawDefinition>
+
+  <LawDefinition Name="CloneLaw3" SubCategory="LawPolitics00" ScoreProvider="PacifistLawEnacted" Duration="1">
+    <Politics Name="Politics00"/>
+    <LawEffectSimulation>
+      <SimulationDescriptorReference Name="CloneLaw3" />
+    </LawEffectSimulation>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">GovernmentAnarchy</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">CloningTech</TechnologyPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Disable">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 1 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
+    <SimulationDescriptorReference Name="LawPolitics00"/>
+    <SimulationDescriptorReference Name="LawUpkeepLevel0"/>
+  </LawDefinition>
+  
+  <!--Horatio version of the laws-->
+  <LawDefinition Name="HoratioCloneLaw2" SubCategory="LawPolitics00" ScoreProvider="PacifistLawEnacted" Duration="1">
+    <Politics Name="Politics00"/>
+    <LawEffectSimulation>
+      <SimulationDescriptorReference Name="CloneLaw2" />
+    </LawEffectSimulation>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">GovernmentAnarchy</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyCloneMajorPopulation</TechnologyPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Disable">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 1 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
+    <SimulationDescriptorReference Name="LawPolitics00"/>
+    <SimulationDescriptorReference Name="LawUpkeepLevel0"/>
+  </LawDefinition>
+
+  <LawDefinition Name="HoratioCloneLaw3" SubCategory="LawPolitics00" ScoreProvider="PacifistLawEnacted" Duration="1">
+    <Politics Name="Politics00"/>
+    <LawEffectSimulation>
+      <SimulationDescriptorReference Name="CloneLaw3" />
+    </LawEffectSimulation>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">GovernmentAnarchy</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyCloneMajorPopulation</TechnologyPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Disable">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 1 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
+    <SimulationDescriptorReference Name="LawPolitics00"/>
+    <SimulationDescriptorReference Name="LawUpkeepLevel0"/>
+  </LawDefinition>
+  
+</Datatable>
